@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*menu bar*/
+.nav-bar {
+    height: 60px;
+    display: flex;
+    background-color: #fa7473;
+
+}
+
+/*menu bar*/
+/*logo*/
+
+.logo {
+    /*width: 20%;*/
+    height: auto;
+}
+
+.logo img {
+    height: 60px;
+}
+
+/*menu bar*/
+/*search item*/
+.control-group {
+    width: 65%;
+    /*height: 50px;*/
+    margin: 5px 20px;
+    /*padding: 5px 20px;*/
+}
+
+.siteSearchInput {
+    width: 90%;
+    /*height: 80%;*/
+    padding: 1% 1%;
+}
+
+#searchSubmitBtn {
+    height: 40px;
+    width: 7%;
+}
+
+/*menu bar*/
+/*side links*/
+.navigation_login {
+    display: flex;
+}
+
+.account {
+    padding-top: 5px;
+    display: flex;
+}
+
+.account img {
+    padding: 4px;
+}
+#mycart.mycart {
+    padding-left: 107px;
+}
+.cartimage {
+    padding-top: 15px;
+    display: flex;
+}
+
+.admin {
+    padding: 15px 10px;
+
+}
+
+.admin a {
+    border: solid thin #fff;
+    /*margin: 5px;*/
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.saleProducts .product_details {
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    float: left;
+    text-align: center;
+    border: solid thin red;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-color: #d5d6cf;
+}
+
+.saleProducts .price_description {
+
+    text-align: center;
+}
+
+.addToCartButton {
+    margin-top: 10px;
+    width: 191px;
+    height: 37PX;
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #FFF
+}
+
+.addToCartButton input{
+    width: 141px;
+    height: 33px;
+    margin-left: 163px;
+    background: gainsboro;
+    font-size: medium;
+}
+
+.saleProducts {
+    display: flex;
+    text-align: center;
+    width: 100%;
+
+}
+
+.SaleProductsTag {
+    text-align: center;
+}
+
+.catalogProducts {
+    width: 96%;
+    margin-right: 2.5%;
+    margin-left: 1.5%;
+}
+
+.catalogProducts #addToCartButton{
+    PADDING-TOP: 21PX;
+    height: 32PX;
+    WIDTH: 118px;
+}
+
+.catalogProducts #addToCartButton .input{
+    height: 32PX;
+    WIDTH: 118px;
+}
+
+.catalogProducts .product_details {
+    display: flex;
+    padding: 20px 10px;
+    border: solid thin red;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    height: 216px;
+}
+
+.catalogProducts .price_description {
+    font-size: large;
+    width: 20%;
+    padding: 20px 10px;
+    MARGIN-TOP: -28px;
+}
+
+.catalogProducts .product_thumb_image {
+    width: 24%;
+}
+.catalogProducts .product_thumb_image img{
+    width: 305px;
+    height: 100%;
+}
+.saleProducts:after {
+    clear: both;
+}
+
+.item_details {
+    font-size: large;
+    padding: 0 20px;
+    width: 50%;
+}
+
+.catalogProducts .price_description .productInformation input[type=submit]{
+    width: 154px;
+    height: 36px;
+
+}
+
+
+
+.catalogProductsTag {
+    text-align: center;
+}
+
+.carttable table {
+    width: 95%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    border: solid thin black;
+    opacity: 0.6;
+    font-size: 16px;
+    /*border-radius: 10px;*/
+}
+
+.carttable th {
+    color: white;
+    background-color: black;
+    font-size: 16px;
+}
+
+.carttable tr:nth-child(even) {
+    background: #CCC;
+    font-size: 16px;
+}
+
+.carttable tr:nth-child(odd) {
+    background: #FFF;
+    font-size: 16px;
+}
+
+.carttable td {
+    text-align: center;
+    width: 33%;
+    font-size: 22px;
+}
+
+.carttable td h4 {
+    margin: 4px;
+}
+
+#cartpageForm {
+    position: absolute;
+    margin-top: 10px;
+    right: 3%;
+}
+
+#cartpageForm input{
+    font-size: medium;
+    width: 128px;
+}
+
+/*.carttable tr:first-child {*/
+/*background: #FF0*/
+/*}*/
+
+/*.carttable tr:nth-child(2n+3) {*/
+/*background: #CCC*/
+/*}*/
+
+.pagination a.selected {
+    font-weight: bold;
+
+}
+
+.pagination a {
+    text-decoration: solid;
+    color: #444444;
+}
+
+.pagination {
+    text-align: right;
+    margin-right: 55px;
+    font-size: larger;
+    margin-left: 88%;
+    padding-bottom: 1%;
+
+}
+.pagination table{
+    border: solid thin lightgrey;
+}
+
+.loginmessage {
+
+    color: #fff;
+
+}
+
+/* Cartpage styling*/
+.dologin a {
+    text-decoration: underline;
+    color: #444444;
+}
+
+/*Cart Page Ends*/
+
+/*login page*/
+.left a {
+    text-decoration: underline;
+    color: #444444;
+}
+
+
+.form-login {
+    border: 3px solid #f1f1f1;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.form-login input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login {
+    color: black;
+
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    padding-top: 16px;
+    /*background-color: #f44336;*/
+    color: black;
+}
+
+span.psw a {
+    color: blue;
+}
+
+.leftspan{
+    float: left;
+
+}
+.footer{
+    /*position: fixed;*/
+    text-align: center;
+    bottom: 0;
+    padding: 1%;
+    width: 100%;
+    background-color: #fa7473;
+}
+.centerspan{
+    /*padding: 5%;*/
+    /*position: absolute;*/
+    /*left: 100%;*/
+}
+
+.emptycart{
+    width: 100%;
+    padding: 1% 0 0 5%;
+}
+.dologin{
+    width: 100%;
+    padding: 2% 0 0 5%;
+    font-size: 24px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+        background-color: #f44336;
+    }
+
+}
+
+
+.showresults{
+    text-align: left;
+    font-size: 20px;
+    COLOR: BLUE;
+    MARGIN-LEFT: 31PX;
+}
+
+
+
+.addToCartButton{
+   ;
+}
+
+/*Checkout page*/
+.billingAndDelivery{
+    font-size: larger;
+}
+
+.checkout{
+    text-align: center;
+    width: 100%;
+
+}
+.checkout form{
+    border: 3px solid #f1f1f1;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 18px;
+}
+
+.checkout input{
+    width: 60%;
+    height: 30px;
+    text-align: center;
+}
+
+/*Checkout page ends*/
+/*Order Confirmation page*/
+.orderconfirm{
+    text-align: center;
+    width: 100%;
+
+}
+
+/*admin page*/
+
+#main{
+    border: 3px solid #f1f1f1;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.chooseitem{
+    border: 3px solid #f1f1f1;
+    width: 239%;
+    margin-left: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align:center;
+    height: 45px;
+    padding-top: 2%;
+    font-size: larger;
+
+
+}
+
+#main .box_add{
+
+    font-size: larger;
+    text-align: left;
+    padding-left: 10%;
+    border: 3px solid #f1f1f1;
+    width: 85%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+#main .box_add{
+padding-bottom: 3%;
+padding-top: 2%;
+
+}
+#main .box_add form input[type=submit]{
+    width:20%;
+    height: 20%;
+
+}
+
+.box table{
+    margin-left: 7%;
+    margin-top: 2%;
+}
